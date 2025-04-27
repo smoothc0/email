@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="pricing-container">
+    <h1>Choose Your Plan</h1>
+    <div class="pricing-cards">
+        <!-- Starter Plan -->
+        <div class="card glass" onmouseover="hoverEffect(this)" onmouseout="hoverEffect(this)">
+            <h2>Starter</h2>
+            <p class="price">$7<span>/month</span></p>
+            <ul>
+                <li>100 emails/month</li>
+                <li>Basic AI filtering</li>
+                <li>CSV exports</li>
+            </ul>
+            <a href="/checkout/starter" class="btn">Subscribe Now</a>
+        </div>
+        
+        <!-- Pro Plan -->
+        <div class="card glass featured" onmouseover="hoverEffect(this)" onmouseout="hoverEffect(this)">
+            <h2>Pro</h2>
+            <p class="price">$14<span>/month</span></p>
+            <ul>
+                <li>500 emails/month</li>
+                <li>Advanced AI filtering</li>
+                <li>API access</li>
+            </ul>
+            <a href="/checkout/pro" class="btn">Subscribe Now</a>
+        </div>
+        
+        <!-- Elite Plan -->
+        <div class="card glass" onmouseover="hoverEffect(this)" onmouseout="hoverEffect(this)">
+            <h2>Elite</h2>
+            <p class="price">$21<span>/month</span></p>
+            <ul>
+                <li>2000 emails/month</li>
+                <li>Premium AI filtering</li>
+                <li>Priority support</li>
+            </ul>
+            <a href="/checkout/elite" class="btn">Subscribe Now</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
