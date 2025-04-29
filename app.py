@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 import stripe
 from config import Config
+from flask import Flask, render_template  # <- Add render_template here
 
 
 # Initialize extensions
